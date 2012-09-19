@@ -62,7 +62,7 @@ public class MyStack<E> implements Collection<E> {
     }
 
     public boolean remove(Object o) {
-        return stack.remove(o);
+        return false;
     }
 
     public boolean containsAll(Collection<?> objects) {

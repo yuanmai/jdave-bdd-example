@@ -51,16 +51,6 @@ public class MyStackSpec extends Specification<MyStack<?>> {
                 specify(stack, contains(i));
             }
         }
-
-        public void doesNotContainRemovedItem() {
-            stack.remove(3);
-            specify(stack, does.not().contains(3));
-        }
-
-        public void containsAllButRemovedItem() {
-            stack.remove(3);
-            specify(stack, containExactly(0, 1, 2, 3, 5, 6, 7, 8, 9));
-        }
     }
 
     public class StackWhichIsNeitherEmptyNorFull {
